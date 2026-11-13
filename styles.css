@@ -1,0 +1,113 @@
+/* 
+    * = TUDO
+*/
+
+* {
+    /* espaçamento */
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bangers", system-ui;
+}
+
+html {
+    /* altura */
+    height: 100%;
+}
+
+body {
+    /* coloca uma imagem de fundo */
+  background-image: url("img/background2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.nome {
+    /* troca a cor do texto */
+    color: #ff3cac;
+    /* troca o tamanho do texto */
+    font-size: 360px;
+    position: absolute;
+    bottom: 500px;
+    /* alinhamento do texto */
+    text-align: center;
+    /* largura */
+    width: 100%;
+}
+
+.personagem {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* altura */
+    height: 700px;
+}
+
+.textos {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.etiqueta {
+    font-size: 26px;
+    color: #ffd319;
+}
+
+h1 {
+    font-size: 72px;
+    color: #ffffff;
+}
+
+.texto-apoio {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.menu {
+    position: absolute;
+    bottom: 40px;
+
+    /* caixa agora é flexivel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* espaçamento */
+    gap: 20px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    /* arrendodamento dos itens */
+    border-radius: 50%;
+    /* Como o objeto(imagem) se encaixa */
+    object-fit: cover;
+    object-position: top;
+    border: 2px solid #ffffff;
+}
+
+.voce {
+    /* troca a cor de fundo */
+    background-color: #ffd319;
+    /* espaçamento interno */
+    padding: 20px;
+    border-radius: 50%;
+}
+
+
+/* 
+    h1 - seletor
+    color - propriedade
+    red - valor da propriedade
+    SEMPRE - TERMINAR com ;
+    SEMPRE - Colocar : entre propriedade e valor
+
+    bottom = baixo
+    top = cima
+    left = esquerda
+    right = direita
+*/

@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GrandTheftAuto VI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
-
 <body>
-    <P>Lucia</P>
+    <p class="nome">Lucia</p>
 
-    <img src="img/lucia.png" alt="Lucia GTA VI">
+    <img class="personagem" src="img/lucia.png">
 
-    <p>Selecione o seu Personagem</p>
-    <h1>Não é só um Jogo</h1>
-    <p>Escolha uma lenda de Dev City. Ou tire uma selfie e vire uma lenda de Vici City.</p>
+    <div class="textos">
+        <p class="etiqueta">Selecione o seu Personagem</p>
+        <h1>Não é só <br>um Jogo</h1>
+        <p class="texto-apoio">Escolha uma lenda de Dev City. Ou tire uma selfie e vire uma.</p>
+    </div>
 
-    <button>Lucia</button>
-    <button>Jason</button>
-    <button>CJ</button>
-    <button>Você</button>
+    <div class="menu">
+        <img onclick="escolherPersonagem('Lucia', 'img/lucia.png', '#ff3cac')" class="avatar" src="img/lucia.png">
+        <img onclick="escolherPersonagem('Jason', 'img/jason.png', '#00b2c9')" class="avatar" src="img/jason.png">
+        <img onclick="escolherPersonagem('CJ', 'img/cj.png', '#7ed37e')" class="avatar" src="img/cj.png">
+        <img onclick="escolherPersonagem('Raul', 'img/Raul.png', '#ffffff')" class="avatar" src="img/Raul.png">
+
+        <label class="voce">📸
+            <input type="file" accept="image/*" hidden onchange="lerFoto(this)">
+        </label>
+    </div>
+
 </body>
-
+<!-- LINK CORRIGIDO AQUI -->
+<script src="https://js.puter.com/v2/"></script>
+<script src="scripts.js"></script>
 </html>
